@@ -30,7 +30,7 @@ Users should be able to:
 ## Links
 
 - Solution URL: [Rock Paper Scissors](https://github.com/QMS85/Rock-Paper-Scissors-Game.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Rock-Paper-Scissors-Game](https://qms85.github.io/Rock-Paper-Scissors-Game/)
 
 ## Built with
 
