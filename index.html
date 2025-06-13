@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <h1>ROCK<br>PAPER<br>SCISSORS</h1>
+      </div>
+      <div class="score-board">
+        <div class="score-label">SCORE</div>
+        <div class="score-value" id="score">12</div>
+      </div>
+    </header>
+
+    <!-- Game Area -->
+    <main class="game-area">
+      <!-- Selection Phase -->
+      <div class="selection-phase" id="selectionPhase">
+        <div class="triangle-bg">
+          <div class="choice-container">
+            <button class="choice paper" data-choice="paper">
+              <div class="choice-inner">
+                <img src="icon-paper.svg" alt="Paper">
+              </div>
+            </button>
+            <button class="choice scissors" data-choice="scissors">
+              <div class="choice-inner">
+                <img src="icon-scissors.svg" alt="Scissors">
+              </div>
+            </button>
+            <button class="choice rock" data-choice="rock">
+              <div class="choice-inner">
+                <img src="icon-rock.svg" alt="Rock">
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result Phase -->
+      <div class="result-phase hidden" id="resultPhase">
+        <div class="result-container">
+          <div class="player-choice">
+            <div class="choice-label">YOU PICKED</div>
+            <div class="choice-display" id="playerChoiceDisplay">
+              <div class="choice-inner">
+                <img id="playerChoiceIcon" src="" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="result-message">
+            <div class="result-text" id="resultText">YOU WIN</div>
+            <button class="play-again-btn" id="playAgainBtn">PLAY AGAIN</button>
+          </div>
+
+          <div class="house-choice">
+            <div class="choice-label">THE HOUSE PICKED</div>
+            <div class="choice-display" id="houseChoiceDisplay">
+              <div class="choice-inner">
+                <img id="houseChoiceIcon" src="" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rules Button -->
+    <button class="rules-btn" id="rulesBtn">RULES</button>
+
+    <!-- Rules Modal -->
+    <div class="modal-overlay hidden" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>RULES</h2>
+          <button class="close-btn" id="closeBtn">
+            <img src="icon-close.svg" alt="Close">
+          </button>
+        </div>
+        <div class="modal-content">
+          <img src="image-rules.svg" alt="Game Rules" class="rules-image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
