@@ -446,3 +446,12 @@ body {
     width: 25px;
   }
 }
+
+.attribution a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: inline-flex;
+  margin-top: 1rem;
+  align-items: center;
+}
